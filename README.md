@@ -31,17 +31,16 @@ Una vez entrenado el modelo, se adjuntó al proyecto en el siguiente [archivo](b
 ## DESARROLLO DEL CÓDIGO
 
 El código desarrollado realiza una detección usando el [modelo general de yolo](yolo11n.pt) en cada frame
-para las clases definidas en la variable `yolo_classes`. Cuando el modelo detectaba una clase, la dibujaba en el frame
-con un rectángulo, le añadía su nombre y añadía al total de clases el objeto encontrado según su id de rastreo (para así
+para las clases definidas en la variable `yolo_classes`. Cuando el modelo detecta una clase, la dibuja en el frame
+con un rectángulo, la equitqueta y añade al total de clases el objeto encontrado según su id de rastreo (para así
 evitar duplicaciones).
 
-Además, cuando detectaba un vehículo, escaneaba únicamente la imagen correspondiente al vehículo para detectar la
-matrícula señalarla en el frame.
+Además, cuando se detecta un vehículo, se escanea únicamente la imagen correspondiente al vehículo para detectar la
+matrícula y señalarla en el frame.
 
-Todos estos datos de detección se iban volcando en un [archivo csv](datos.csv), además
+Todos estos datos de detección se vuelcan en un [archivo csv](datos.csv), además
 del [video final](https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/david_koschel101_alu_ulpgc_es/EeZrEN3Og3hBjhjzVuJBoEIBEtEWwhR3WA0jh522aG8wiA?e=CEMbvL)
-con los
-rectángulos y el conteo por clase.
+con los rectángulos y el conteo por clase.
 
-Todas las funciones implementas en el código junto con una breve explicación de su utilidad se pueden encontrar en el
+Todas las funciones implementadas en el código junto con una breve explicación de su utilidad se pueden encontrar en el
 [cuaderno Jupyter](VC_P4.ipynb).
