@@ -8,30 +8,25 @@
 
 Primero que nada, buscamos un dataset que se ajustase a lo que necesitábamos, para ello estuvimos buscando en Kaggle y
 Roboflow. Cuando
-encontramos un dataset que valiera para la construcción del modelo que queríamos, preparamos el entorno y empezamos a
+encontramos un [dataset que valiera](https://universe.roboflow.com/manoworkspace/license-planes/dataset/5/images) para
+la construcción del modelo que queríamos, preparamos el entorno y empezamos a
 entrenarlo.
-Con el dataset que obtuvimos entrenamos el modelo en Kaggle para aprovechar de su potencia de GPU. Para ello, fuimos
-ajustando
-los valores de _batch_ e _imgsize_ para obtener un modelo que funcionase bien sobre el vídeo de prueba. El dataset usado
-fue el adjuntado en el siguiente
-[link](https://universe.roboflow.com/manoworkspace/license-planes/dataset/5/images).
 Se juntaron todas las imágenes en una única clase, ya que al principio estaban divididos en dos y se dividió en tres
 conjuntos, entrenamiento, validación y test.
+Con el dataset que obtuvimos entrenamos el modelo en Kaggle para aprovechar de su potencia de GPU. Para ello, fuimos
+ajustando
+los valores de _batch_ e _imgsize_ para obtener un modelo que funcionase bien sobre el vídeo de prueba.
 
-Posteriormente, se comenzó a realizar el entrenamiento del modelo. Esta parte de la práctica
-fue la que más problemas nos causó, ya que nuestros ordenadores personales tardaban mucho en realizar los
-entrenamientos.
-Por ello decidimos realizar el entrenamiento en Kaggle,
-el
-cual no nos dio los resultados que esperábamos (porque el modelo todavía cometía bastantes fallos), pero lo
-suficientemente
-decentes como para realizar la práctica.
+El entrenamiento no nos dio los resultados que esperábamos (el modelo todavía cometía bastantes fallos), pero lo
+suficientemente decentes como para realizar la práctica.
 
-En el siguiente [link](https://www.kaggle.com/code/user06092111/notebook3da451b170) puede encontrar la instancia de
-Kaggle
-que empleamos y el dataset.
+En el siguiente [link](https://www.kaggle.com/code/user06092111/notebook3da451b170) se puede encontrar la instancia de
+Kaggle y el dataset
+que empleamos. Además, en el apartado ouptut están los resultados de los entrenamientos. El empleado en la práctica fue
+el último que
+se entrenó.
 
-Una vez entrenado el modelo, se adjuntó al proyecto en el siguiente [archivo.pt](best.pt).
+Una vez entrenado el modelo, se adjuntó al proyecto en el siguiente [archivo](best.pt).
 
 ## DESARROLLO DEL CÓDIGO
 
